@@ -1,0 +1,213 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.attribution{
+    
+    color: white;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: white;
+}
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    width: 350px;
+    height: 340px;
+    border-radius: 20px;
+}
+
+#star-svg{
+    width: 35px;
+    height: 35px;
+    background-color: var(--dark-blue);
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0 solid black;
+    border-radius: 50%;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
+    
+}
+
+#p1{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#p2{
+    color: var(--light-grey);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+#inputs{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0 15%;
+    align-items: center;
+
+}
+
+#inputs div button{
+    width: 40px;
+    height: 40px;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0 solid black;
+    color: var(--medium-grey);
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+#inputs div button:hover{
+    color: var(--white);
+    background-color: var(--medium-grey);
+    cursor: pointer;
+}
+
+#inputs div button:focus{
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+#inputs div input{
+    position: relative;
+}
+
+#submit-button{
+    color: var(--white);
+    border: 0px solid var(--dark-blue);
+    background-color: var(--orange);
+    width: 320px;
+    height: 35px;
+    border-radius: 500px;
+    transition: 0.2s;
+}
+
+#submit-button:hover{
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+#thank-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    width: 350px;
+    height: 340px;
+    border-radius: 20px;
+}
+
+#thank-select-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--orange);
+    width: 220px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: var(--dark-blue);
+}
+
+#thank-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0 30px;
+}
+
+#thank-text p{
+    text-align: center;
+}
+
+
+
+
+    
